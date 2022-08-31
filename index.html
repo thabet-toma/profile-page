@@ -26,7 +26,7 @@
             </div>
           
           <div class="bottom">
-            <h1>Jahn Doe</h1>
+            <h1 class="name">Jahn Doe</h1>
 
             <div class="location">
               <img
@@ -46,7 +46,7 @@
             
             <div class="link">
               <img src="icons\gear.png" alt="gear" style="height: 20px" />
-              <a href="#">edit profile</a>
+              <a href="#" onclick="change()">edit profile</a>
               </div>
               </div>
               </div>
@@ -89,10 +89,12 @@
               src="icons\accept-circle.png"
               alt="accept"
               class="accept-sign"
+              onclick="removeFirst(),First()"
             /><img
               src="icons\close-circle.png"
               alt="close"
               class="close-sign"
+              onclick="removeFirst(), removeNumF()"
             />
           </p>
           <p class="second-request">
@@ -106,10 +108,12 @@
               src="icons\accept-circle.png"
               alt="accept"
               class="accept-sign"
+              onclick="removeSecond(),First()"
             /><img
               src="icons\close-circle.png"
               alt="close"
               class="close-sign"
+              onclick="removeSecond(), removeNumF()"
             />
           </p>
           </div>
@@ -138,6 +142,6 @@
         
     
       </div>
-    
+    <script src="js.js"></script>
   </body>
 </html>
